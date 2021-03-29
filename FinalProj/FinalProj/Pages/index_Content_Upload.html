@@ -20,7 +20,7 @@
 
     <script src="../Scripts/bootstrap.min.js"></script>
     <script src="../Scripts/bootstrap.js"></script>
-    <link href="Contentstyle.css" rel="stylesheet" />
+    <link href="CSS/Contentstyle.css" rel="stylesheet" />
 
     <script>
         var categoryArr = [];
@@ -152,9 +152,9 @@
                 let str = "";
                 for (var j = 0; j < contents[i].TagsArray.length; j++) {
                     if (j == contents[i].TagsArray.length - 1)
-                        str += contents[i].TagsArray[j].Tagname 
+                        str += contents[i].TagsArray[j].Tagname
                     else
-                    str += contents[i].TagsArray[j].Tagname + ", "
+                        str += contents[i].TagsArray[j].Tagname + ", "
                 }
                 contents[i].TagsArray = str;
 
@@ -295,17 +295,17 @@
                     Caption: VidName,
                     Subtitlepath: Video,
                     CategoryCode: categoryId,
-                    TagsArray :tagsArr
+                    TagsArray: tagsArr
                 }
 
 
                 if (mode == "new")
-                ajaxCall("POST", "../api/Content", JSON.stringify(Content), postSuccess, postError)
+                    ajaxCall("POST", "../api/Content", JSON.stringify(Content), postSuccess, postError)
 
-                else 
+                else
                     //update
 
-                return false;
+                    return false;
             }
             else
                 alert("לא נבחר סרטון!")
@@ -356,7 +356,7 @@
         </div>
 
         <div class="col-sm-10">
-            <img class="LogoImage" src="../imgesFileProject/WhatsApp_Image_2021-02-25_at_11.52.43-removebg-preview.png" />
+            <img class="LogoImage" src="../../imgesFileProject/WhatsApp_Image_2021-02-25_at_11.52.43-removebg-preview.png" />
         </div>
     </div>
     <div class="upload"><span>העלאת תכנים</span></div>
