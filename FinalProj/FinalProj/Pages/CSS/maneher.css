@@ -8,7 +8,7 @@ body {
     direction: rtl;
     font-family: Tahoma;
     height: 100%;
-    background-image: url('../imgesFileProject/unnamed.png');
+    background-image: url('../../imgesFileProject/unnamed.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
